@@ -295,11 +295,11 @@ function initDemos() {
   })();
 
   (function() {
-    var demo = $('#polymer-flex-demo');
+    var demo = $('#core-layout-demo');
     var output = demo.querySelector('output');
 
-    var flexLayout = output.querySelector('polymer-flex-layout');
-    var flexDiv = flexLayout.querySelector('div[flex]');
+    var flexLayout = output.querySelector('core-layout');
+    var flexDiv = flexLayout.querySelector('div[core-flex]');
 
     flexLayout.listen('click', function(e) {
       var div = document.createElement('div');
@@ -312,12 +312,12 @@ function initDemos() {
       e.target.classList.toggle('inactive');
     });
 
-    demo.querySelector('[data-action="flex"]').listen('click', function(e) {
-      var flexing = flexDiv.getAttribute('flex') != undefined;
+    demo.querySelector('[data-action="core-flex"]').listen('click', function(e) {
+      var flexing = flexDiv.getAttribute('core-flex') != undefined;
       if (flexing) {
-        flexDiv.removeAttribute('flex');
+        flexDiv.removeAttribute('core-flex');
       } else {
-        flexDiv.setAttribute('flex', true);
+        flexDiv.setAttribute('core-flex', true);
       }
       e.target.classList.toggle('inactive');
     });
@@ -451,6 +451,10 @@ function enableDiagramAnimations() {
         case 'diagram-contract':
           animations.contract();
           break;
+
+        case 'platform-shrink':
+          animations.platformShrink();
+          break;
       }
     });
   })();
@@ -578,7 +582,7 @@ function enableDiagramAnimations() {
       this.blocks.forEach(function(block, index) {
         group.append(new Animation(block, [
           { opacity: 1, transform: 'translate3d(0, 0, 0)' }
-        ], { duration: 0.5, easing: 'ease-in-out' }));
+        ], { duration: 0.5, easing: 'ease-in-out', fill: 'both' }));
       });
       document.timeline.play(group);
     },

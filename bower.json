@@ -15,6 +15,16 @@
   ],
   "dependencies": {
     "polymer-elements": "Polymer/polymer-elements#~0.2.1",
-    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.1"
+    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.1",
+    "core-toolbar": "Polymer/core-toolbar#~0.2.3",
+    "core-icon-button": "Polymer/core-icon-button#~0.2.3",
+    "core-layout": "Polymer/core-layout#master"
+  },
+  "resolutions": {
+    "polymer": "0.2.3",
+    "platform": "0.2.3",
+    "core-component-page": "0.2.3",
+    "core-action-icons": "0.2.3",
+    "core-layout": "master"
   }
 }

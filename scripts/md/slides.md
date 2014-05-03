@@ -411,6 +411,19 @@ subtitle: The Web Components way
 
 ---
 
+title: Video's secret DOM
+subtitle: Be like the browser makers
+content_class: flexbox vcenter
+
+<video style="width: 55%; margin-top: -15%" src="foo.webm" controls>
+</video>
+<br>
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;">
+&lt;video src="foo.webm" controls&gt;&lt;/video&gt;
+</pre>
+
+---
+
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -571,6 +584,9 @@ title: Layers of Polymer
     <h3 class="bold">Native</h3>
     <p>The current browser landscape</p>
   </div>
+
+  <div id="diagram-contract" data-build-index="7"></div>
+  <div id="platform-shrink" data-build-index="8"></div>
 </div>
 
 <aside class="note">
@@ -585,6 +601,30 @@ title: Layers of Polymer
     </ul>
   </section>
 </aside>
+
+---
+
+hidden: true
+id: evaporate-platform
+class: polymer-diagram
+
+<div id="blocks-3d">
+  <img id="native-3d" class="block-3d" src="./images/polymer/diagram/native.svg">
+  <img id="platform-3d" class="block-3d" src="./images/polymer/diagram/platform.svg">
+  <img id="polymer-3d" class="block-3d" src="./images/polymer/diagram/polymer.svg">
+  <img id="elements-3d" class="block-3d" src="./images/polymer/diagram/elements.svg">
+</div>
+
+<div class="diagram-explanations" style="margin-top: 250px;">
+  <div class="diagram-explanation">
+    <h3 style="font-size: 35px; line-height: 1.5;">As browsers implement the specifications supported by the platform, the need for this <br>layer <strong>decreases</strong>.</h3>
+  </div>
+  <div class="build">
+    <div id="platform-shrink" class="diagram-explanation">
+      <h3 style="font-size: 35px; line-height: 1.5;">...till eventually it's all <strong>gone</strong>.</h3>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -665,8 +705,7 @@ content_class: flexbox vcenter
 ---
 
 id: polymer-ui-elements
-title: Polymer UI elements
-subtitle: visual elements
+title: UI elements
 
 <div class="pull-right flexbox vcenter" style="width: 40%;margin-top:-100px;">
   <img src="images/polymer/uielements/polymer-ui-tabs.png" style="width:100%">
@@ -677,21 +716,27 @@ subtitle: visual elements
   <img src="images/polymer/uielements/toolbar.png" style="width:100%">
 </div>
 
-`<polymer-ui-accordion>`
+`<core-header-panel>` [demo](http://polymer.github.io/core-header-panel/components/core-header-panel/demo.html)
 
-`<polymer-ui-animated-pages>`
+`<core-drawer-panel>` [demo](http://polymer.github.io/core-drawer-panel/)
 
-`<polymer-ui-overlay>`
+`<core-overlay>`
 
-`<polymer-ui-card>` [demo](http://www.polymer-project.org/components/polymer-ui-card/demo.html)
+`<core-tooltip>`
 
-`<polymer-ui-sidebar-menu>` [demo](http://www.polymer-project.org/components/polymer-ui-sidebar-menu/demo.html)
+`<core-toolbar>`
 
-`<polymer-ui-tabs>` [demo](http://www.polymer-project.org/components/polymer-ui-tabs/demo.html)
+`<core-menu>`
 
-`<polymer-ui-toggle-button>` [demo](http://www.polymer-project.org/components/polymer-ui-toggle-button/demo.html)
+`<core-transition>` 
 
-`<polymer-ui-theme-aware>`
+`<core-menu>`
+
+`<core-list>`
+
+`<core-iconset>`
+
+`<core-action-icons>`
 
 <aside class="note">
   <section>
@@ -704,31 +749,32 @@ subtitle: visual elements
 
 ---
 
-id: polymer-ui-tabs-demo
 title: Everything is an element
-subtitle: Tabs revisited
+subtitle: Core Toolbar
 
 <pre class="corner prettyprint">
-&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
-&lt;link rel="import" href="<span alt="bower install polymer-ui-elements" data-tooltip="bower install polymer-ui-elements">polymer-ui-tabs.html</span>">
+&lt;script src="<span alt="bower install Polymer/polymer" data-tooltip="bower install Polymer/polymer">platform.js</span>">&lt;/script>
+&lt;link rel="import" href="<span alt="bower install Polymer/core-toolbar" data-tooltip="bower install Polymer/core-toolbar">core-toolbar.html</span>">
+&lt;link rel="import" href="<span alt="bower install Polymer/core-icon-button" data-tooltip="bower install Polymer/core-icon-button">core-icon-button.html</span>">
 </pre>
 
 <pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
-&lt;polymer-ui-tabs selected="0"&gt;
-  &lt;span&gt;Home&lt;/span&gt;
-  &lt;span&gt;About&lt;/span&gt;
-  &lt;span&gt;Contact&lt;/span&gt;
-&lt;/polymer-ui-tabs&gt;
+&lt;core-toolbar&gt;
+  &lt;core-icon-button icon="menu"&gt;&lt;/core-icon-button&gt;
+  &lt;div core-flex&gt;My App&lt;/div&gt;
+  &lt;core-icon-button icon="dots"&gt;&lt;/core-icon-button&gt;
+&lt;/core-toolbar&gt;
 </pre>
 
 <div class="component-demo">
-<link rel="import" href="bower_components/polymer-ui-tabs/polymer-ui-tabs.html">
+<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
 <output>
-  <polymer-ui-tabs selected="0">
-    <span>Home</span>
-    <span>About</span>
-    <span>Contact</span>
-  </polymer-ui-tabs>
+  <core-toolbar style="background: #7FDBFF">
+    <core-icon-button icon="menu"></core-icon-button>
+    <div core-flex>My App</div>
+    <core-icon-button icon="dots"></core-icon-button>
+  </core-toolbar>
 </output>
 
 </div>
@@ -813,35 +859,34 @@ content_class: flexbox vcenter
 
 ---
 
-title: Polymer elements
-subtitle: non-visual utility elements
+title: Non-visual Elements
 content_class: columns-2
 
 <span class="bold blue">Layout</span>
 
-`<polymer-layout>`
+`<core-layout>`
 
-`<polymer-flex-layout>`
+`<core-layout-grid>`
 
-`<polymer-grid-layout>`
+`<core-layout-trbl>`
 
 <span class="bold blue">View</span>
 
-`<polymer-media-query>`
+`<core-media-query>`
 
-`<polymer-page>`
+`<core-pages>`
 
 <span class="bold blue">Services / libs</span>
 
-`<polymer-shared-lib>`
+`<core-shared-lib>`
 
-`<polymer-google-jsapi>`
+`<core-firebase>`
 
 <span class="bold blue">Data</span>
 
-`<polymer-localstorage>`
+`<core-localstorage>`
 
-`<polymer-xhr>`
+`<core-ajax>`
 
 `<polymer-jsonp>`
 
@@ -853,44 +898,36 @@ content_class: columns-2
 
 `<polymer-signals>`
 
-`<polymer-selector>`
-
-<aside class="note">
-  <section>
-    <p>When you start working with Web Components the mind naturally goes toward UI...</p>
-    <p>But there are a lot of things we already do in markup that are non-visual</p>
-    <p>So we've created elements for doing things like layout, ajax, localstorage and even working with the file system. It might sound weird to think of using an HTML tag to do AJAX, but when you actually start using it you'll realize it's an *awesome* way to work.</p>
-  </section>
-</aside>
+`<core-selector>`
 
 ---
 
-id: polymer-flex-demo
+id: core-layout-demo
 title: Everything is an element
 subtitle: flexbox...using DOM
 
 <pre class="corner prettyprint">
-&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
-&lt;link rel="import" href="<span alt="bower install polymer-elements" data-tooltip="bower install polymer-elements">polymer-flex-layout.html</span>">
+&lt;script src="<span alt="bower install Polymer/polymer" data-tooltip="bower install Polymer/polymer">platform.js</span>">&lt;/script>
+&lt;link rel="import" href="<span alt="bower install core-layout" data-tooltip="bower install core-layout">core-layout.html</span>">
 </pre>
 
 <pre class="prettyprint" style="font-size: 30px; line-height: 1.2;" data-lang="HTML">
-&lt;polymer-flex-layout <b data-action="vertical">vertical</b> <b>iscontainer</b>>
+&lt;core-layout <b data-action="vertical">vertical</b>>
   &lt;div>Header&lt;/div>
-  &lt;div <b data-action="flex">flex</b>>Body&lt;/div>
+  &lt;div <b data-action="core-flex">core-flex</b>>Body&lt;/div>
   &lt;div>Footer&lt;/div>
-&lt;/polymer-flex-layout>
+&lt;/core-layout>
 </pre>
 
 
 <div class="component-demo" style="height:100%">
-<link rel="import" href="bower_components/polymer-flex-layout/polymer-flex-layout.html">
+<link rel="import" href="bower_components/core-layout/core-layout.html">
 <output>
-  <polymer-flex-layout vertical iscontainer title="Click me to add children">
+  <core-layout vertical title="Click me to add children">
     <div>Header</div>
-    <div flex>Body</div>
+    <div core-flex>Body</div>
     <div>Footer</div>
-  </polymer-flex-layout>
+  </core-layout>
 </output>
 
 </div>
@@ -1092,6 +1129,7 @@ title: Declarative registration
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1105,6 +1143,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 id: two-way-binding
 title: Binding Expressions
 
@@ -1142,6 +1181,7 @@ title: Binding Expressions
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1155,6 +1195,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 id: published-properties
 title: Published properties
 
@@ -1567,31 +1608,6 @@ body_class: platform-fill
 content_class: flexbox vleft
 
 <h2 class="faded" style="font-size: 52px;">Additional features include <em>Mutation Observers</em>, <em>Pointer Events</em>, <em>Web Animations</em>, and much more.</h2>
-
----
-
-hidden: true
-id: evaporate-platform
-class: polymer-diagram
-
-<div id="blocks-3d">
-  <img id="native-3d" class="block-3d" src="./images/polymer/diagram/native.svg">
-  <img id="platform-3d" class="block-3d" src="./images/polymer/diagram/platform.svg">
-  <img id="polymer-3d" class="block-3d" src="./images/polymer/diagram/polymer.svg">
-  <img id="elements-3d" class="block-3d" src="./images/polymer/diagram/elements.svg">
-</div>
-
-<div class="diagram-explanations" style="margin-top: 250px;">
-  <div class="diagram-explanation">
-    <h3 style="font-size: 35px; line-height: 1.5;">As browsers implement the specifications supported by the platform, the need for this <br>layer <strong>decreases</strong>.</h3>
-  </div>
-  <div class="build">
-    <div id="platform-shrink" class="diagram-explanation">
-      <h3 style="font-size: 35px; line-height: 1.5;">...till eventually it's all <strong>gone</strong>.</h3>
-    </div>
-  </div>
-</div>
-
 
 ---
 
