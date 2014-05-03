@@ -12,6 +12,9 @@ handlers:
 - url: /bower_components
   static_dir: bower_components
 
+- url: /elements
+  static_dir: elements
+
 - url: /images
   static_dir: images
 
