@@ -9,6 +9,9 @@ handlers:
 - url: /js
   static_dir: js
 
+- url: /bower_components
+  static_dir: bower_components
+
 - url: /images
   static_dir: images
 
