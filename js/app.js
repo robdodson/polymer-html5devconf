@@ -167,15 +167,20 @@ function initContent(e) {
   if (currentSlide.dataset.bodyClass) {
     document.body.classList.add(currentSlide.dataset.bodyClass);
   }
+  if (currentSlide.dataset.bodyOverlay) {
+    document.body.classList.add(currentSlide.dataset.bodyOverlay);
+  }
 
   slidedeck.container.listen('slideenter', function(e) {
     var slide = e.target;
     if (slide.classList.contains('nobackdrop')) {
       document.body.classList.add('nobackdrop');
     }
-
     if (slide.dataset.bodyClass) {
       document.body.classList.add(slide.dataset.bodyClass);
+    }
+    if (slide.dataset.bodyOverlay) {
+      document.body.classList.add(slide.dataset.bodyOverlay);
     }
   });
 
@@ -186,6 +191,9 @@ function initContent(e) {
     }
     if (slide.dataset.bodyClass) {
       document.body.classList.remove(slide.dataset.bodyClass);
+    }
+    if (slide.dataset.bodyOverlay) {
+      document.body.classList.remove(slide.dataset.bodyOverlay);
     }
 
   });

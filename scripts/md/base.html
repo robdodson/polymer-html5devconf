@@ -66,7 +66,7 @@ https://code.google.com/p/io-2012-slides
 
 
 {% for slide in slides %}
-<slide {% if slide.id %}id="{{- slide.id -}}"{% endif %} {% if slide.class %}class="{{- slide.class -}}"{% endif %} {% if slide.image %}style="background-image: url({{- slide.image -}})"{% endif %} {% if slide.body_class %}data-body-class="{{- slide.body_class -}}"{% endif %} {% if slide.hidden == 'true' %}hidden{% endif %}>
+<slide {% if slide.id %}id="{{- slide.id -}}"{% endif %} {% if slide.class %}class="{{- slide.class -}}"{% endif %} {% if slide.image %}style="background-image: url({{- slide.image -}})"{% endif %} {% if slide.body_class %}data-body-class="{{- slide.body_class -}}"{% endif %} {% if slide.body_overlay %}data-body-overlay="overlay-{{- slide.body_overlay -}}"{% endif %} {% if slide.hidden == 'true' %}hidden{% endif %}>
   {% if 'segue' in slide.class %}
     <aside class="gdbar"><img src="images/logos/chrome_logo.png"></aside>
     <hgroup class="auto-fadein">

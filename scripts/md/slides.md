@@ -4,7 +4,7 @@ id: who
 <p class="avatar rounded"></p>
 
 <p>Rob Dodson</p>
-<p>Staff Developer Advocate, <img src="images/logos/google_logo.png" style="height: 30px;margin: 0;"> <img src="images/logos/chrome_logo.png" style="height:27px;margin:0;vertical-align: top;"></p>
+<p>Developer Advocate, <img src="images/logos/google_logo.png" style="height: 30px;margin: 0;"> <img src="images/logos/chrome_logo.png" style="height:27px;margin:0;vertical-align: top;"></p>
 
 <p class="topmargin"></p>
 
@@ -28,39 +28,30 @@ id: who
 
 ---
 
-hidden: true
-id: agenda
-title: Today's agenda
-class: large
-
-<div class="topmargin">
-  <div>
-    <h3>Web Components? Polymer?</h3>
-    <br>
-  </div>
-  <div>
-    <h3>Using Web Components with Polymer</h3>
-    <br>
-  </div>
-  <div>
-    <h3>Example time</h3>
-    <br>
-  </div>
-</div>
-
-<aside class="note">
-  <section>
-    <ul>
-      <li>What is Polymer? What are Web Components?</li>
-      <li>Start working with Polymer so you can use Web Components in modern browsers</li>
-      <li>We're just gonna write some code and mess around</li>
-    </ul>
-  </section>
-</aside>
+body_class: westinghouselogo
 
 ---
 
-hidden: true
+body_class: westinghousebulb
+
+---
+
+body_class: camera
+body_overlay: white
+class: nobackground nopadding
+content_class: flexbox vleft
+
+<figure class="backdrop">
+  <blockquote>
+    &ldquo;The <strong>sum of these components</strong> made up the physical brand&rdquo;
+  </blockquote>
+  <figcaption>
+    <cite><a href="http://daverupert.com/2013/04/responsive-deliverables/">Responsive Deliverables</a></cite>, Dave Rupert
+  </figcaption>
+</figure>
+
+---
+
 body_class: core-fill
 content_class: flexbox vleft
 
@@ -68,7 +59,6 @@ content_class: flexbox vleft
 
 ---
 
-hidden: true
 id: netscape
 #title: Understand where we came from
 class: nobackdrop nobackground
@@ -119,23 +109,6 @@ body_class: netscape
 
 ---
 
-hidden: true
-content_class: flexbox vcenter
-
-<h2>Elements are the building blocks of the web</h2>
-<img src="./images/screenshots/legos.png" style="position: absolute; bottom: -500px; right: -350px;">
-
----
-
-hidden: true
-body_class: elements-fill
-content_class: flexbox vcenter
-
-<h2 class="faded">Elements are <em>encapsulated</em></h2>
-
----
-
-hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -152,6 +125,13 @@ content_class: flexbox vcenter
   <option>Medium</option>
   <option>Large</option>
 </select>
+
+---
+
+content_class: flexbox vcenter
+
+<h2>Elements are the building blocks of the web</h2>
+<img src="./images/screenshots/legos.png" style="position: absolute; bottom: -500px; right: -350px;">
 
 ---
 
@@ -301,7 +281,6 @@ var foo = mySelect.selectedIndex;
 
 ---
 
-hidden: true
 body_class: core-fill
 content_class: flexbox vleft
 
@@ -315,24 +294,45 @@ content_class: flexbox vleft
 
 ---
 
-hidden: true
-class: nobackdrop nobackground yum
-content_class: flexbox vcenter centered
-
-<img src="images/screenshots/tabs3.png" style="height:180px;">
+title: This happened
+body_class: readable
+class: nobackground highlight
 
 ---
 
-hidden: true
+id: tab-examples
+title: Building UI today
+
+<div class="build flexbox vcenter centered">
+<img src="images/screenshots/tabs/jquery.png">
+<img src="images/screenshots/tabs/kendo.png">
+<img src="images/screenshots/tabs/yui.png">
+<img src="images/screenshots/tabs/angular.png">
+<img src="images/screenshots/tabs/sencha.png">
+<img src=""> <!-- intentional. holder to see all images together -->
+</div>
+
+<aside class="note">
+  <section>
+    <p><b>Now that we're seeing this JavaScript renaissance...</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: paralysis
+
+---
+
 class: large
 content_class: flexbox vcenter
 
 <pre class="nohighlight" style="margin-top: -50px;">
-&lt;tabs&gt;
-  &lt;tab&gt;Tab 1&lt;/tab&gt;
-  &lt;tab&gt;Tab 2&lt;/tab&gt;
-  &lt;tab&gt;Tab 3&lt;/tab&gt;
-&lt;/tabs&gt;
+&lt;x-tabs&gt;
+  &lt;x-tab&gt;Tab 1&lt;/x-tab&gt;
+  &lt;x-tab&gt;Tab 2&lt;/x-tab&gt;
+  &lt;x-tab&gt;Tab 3&lt;/x-tab&gt;
+&lt;/x-tabs&gt;
 </pre>
 
 <aside class="note">
@@ -355,6 +355,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 title: Creating a carousel
 subtitle: The old way
 
@@ -392,6 +393,7 @@ subtitle: The old way
 
 ---
 
+hidden: true
 title: Creating a carousel
 subtitle: The Web Components way
 
@@ -444,27 +446,6 @@ content_class: flexbox vleft
 
 ---
 
-hidden: true
-id: tab-examples
-title: Building UI today
-
-<div class="build flexbox vcenter centered">
-<img src="images/screenshots/tabs/jquery.png">
-<img src="images/screenshots/tabs/kendo.png">
-<img src="images/screenshots/tabs/yui.png">
-<img src="images/screenshots/tabs/angular.png">
-<img src="images/screenshots/tabs/sencha.png">
-<img src=""> <!-- intentional. holder to see all images together -->
-</div>
-
-<aside class="note">
-  <section>
-    <p><b>Now that we're seeing this JavaScript renaissance...</b></p>
-  </section>
-</aside>
-
----
-
 class: nobackdrop nobackground browser-support
 content_class: flexbox vcenter
 
@@ -485,7 +466,7 @@ content_class: flexbox vcenter
     <div><img src="images/logos/browsers/safari_logo.png"></div>
     <div class="supported partial"><img src="images/logos/browsers/ff_logo.png"></div>
     <div class="supported"><img src="images/logos/chrome_logo.png"></div>
-    <div><img src="images/logos/browsers/opera_logo.png"></div>
+    <div class="supported"><img src="images/logos/browsers/opera_logo.png"></div>
     <div><img src="images/logos/browsers/ie10_logo.png"></div>
   </div>
 </div>
@@ -1608,6 +1589,33 @@ body_class: platform-fill
 content_class: flexbox vleft
 
 <h2 class="faded" style="font-size: 52px;">Additional features include <em>Mutation Observers</em>, <em>Pointer Events</em>, <em>Web Animations</em>, and much more.</h2>
+
+---
+
+body_class: iceberg
+body_overlay: light-black
+class: nobackground nopadding
+content_class: flexbox vcenter
+
+<h2 style="color: white; font-size: 60px;">Changing Our Process</h2>
+
+---
+
+body_class: flowers2
+body_overlay: core
+class: nobackground nopadding fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Living</em> Style Guides</h2>
+
+---
+
+body_class: tracks
+body_overlay: elements
+class: nobackground nopadding fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Build <em>Prototypes</em></h2>
 
 ---
 

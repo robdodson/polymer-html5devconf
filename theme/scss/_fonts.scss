@@ -1,0 +1,30 @@
+/* Light */
+@font-face {
+  font-family:'Open Sans';
+  src: url('../../fonts/OpenSans-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+/* Light Italic */
+@font-face {
+  font-family:'Open Sans';
+  src: url('../../fonts/OpenSans-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+/* Regular */
+@font-face {
+  font-family:'Open Sans';
+  src: url('../../fonts/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Condensed Bold */
+@font-face {
+  font-family:'Open Sans Condensed';
+  src: url('../../fonts/OpenSans-CondBold.ttf');
+  font-weight: 600;
+  font-style: bold;
+}

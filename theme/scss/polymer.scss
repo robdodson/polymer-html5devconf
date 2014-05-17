@@ -140,6 +140,51 @@
 }
 
 body {
+  &.overlay-white::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#FAFAFA, 0.7);
+  }
+  &.overlay-grey::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#424242, 0.8);
+  }
+  &.overlay-light-black::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#000, 0.1);
+  }
+  &.overlay-core::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($polymer-core-color, 0.93);
+  }
+  &.overlay-elements::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($polymer-elements-color, 0.93);
+  }
   &.black {
     background: black;
   }
@@ -191,6 +236,51 @@ body {
   &.checkers {
     background: url('../../images/bgs/bg-rep.png');
     background-size: 20px;
+  }
+  &.westinghouselogo {
+    background: url('../../images/bgs/westinghouse-logo.jpg') no-repeat center;
+    background-size: contain;
+    background-color: black;
+  }
+  &.westinghousebulb {
+    background: url('../../images/bgs/westinghouse-bulb.jpeg') no-repeat center;
+    background-size: contain;
+  }
+  &.paralysis {
+    background: url('../../images/bgs/paralysis.png') no-repeat center;
+    background-size: cover;
+  }
+  &.camera {
+    background: url('../../images/bgs/camera.jpg') no-repeat 50% 40%;
+    background-size: cover;
+  }
+  &.iceberg {
+    background: url('../../images/bgs/iceberg.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.leaf {
+    background: url('../../images/bgs/leaf.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.flowers {
+    background: url('../../images/bgs/flowers.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.flowers2 {
+    background: url('../../images/bgs/flowers2.jpg') no-repeat 50% 45%;
+    background-size: cover;
+  }
+  &.tracks {
+    background: url('../../images/bgs/tracks.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.factory {
+    background: url('../../images/bgs/factory.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.bees {
+    background: url('../../images/bgs/bees.jpg') no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -1089,4 +1179,31 @@ slide.thank-you-slide {
     color: $brand-blue-secondary2;
     font-size: 24pt;
   }
+}
+
+blockquote {
+  font-size: 67px;
+  font-weight: 300;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+figcaption {
+  float: right;
+  margin: 15px 5px 10px;
+  font-style: italic;
+}
+
+figcaption a {
+  color: $gray-3;
+  border-bottom: 1px solid lighten($gray-3, 20%);
+}
+
+.backdrop {
+  background: rgba(#FAFAFA, 0.8);
+  padding: 0 10px 5px;
+}
+
+.nopadding {
+  padding: 0;
 }
