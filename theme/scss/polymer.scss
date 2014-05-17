@@ -282,6 +282,10 @@ body {
     background: url('../../images/bgs/bees.jpg') no-repeat center;
     background-size: cover;
   }
+  &.paravel {
+    background: url('../../images/bgs/paravel.jpg') no-repeat center;
+    background-size: cover;
+  }
 }
 
 slide.current {
