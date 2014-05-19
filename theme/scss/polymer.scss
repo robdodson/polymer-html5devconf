@@ -247,7 +247,7 @@ body {
     background-size: contain;
   }
   &.paralysis {
-    background: url('../../images/bgs/paralysis.png') no-repeat center;
+    background: url('../../images/bgs/paralysis.png') no-repeat 50% 10%;
     background-size: cover;
   }
   &.camera {
@@ -285,6 +285,104 @@ body {
   &.paravel {
     background: url('../../images/bgs/paravel.jpg') no-repeat center;
     background-size: cover;
+  }
+  &.styletiles {
+    background: url('../../images/bgs/styletiles.png') no-repeat 50% 25%;
+    background-size: cover;
+  }
+  &.styletiles2 {
+    background: url('../../images/bgs/styletiles2.png') no-repeat center;
+    background-size: cover;
+  }
+  &.elementcollages {
+    background: url('../../images/bgs/element-collages.png') no-repeat 50% 8%;
+    background-size: cover;
+  }
+  &.wireframe {
+    background: url('../../images/bgs/wireframe.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.atomicdesign {
+    background: url('../../images/bgs/atomic-design.png') no-repeat center;
+    background-size: cover;
+  }
+  &.styleguides {
+    background: url('../../images/bgs/style-guides.png') no-repeat center;
+    background-size: cover;
+  }
+  &.barebones {
+    background: url('../../images/bgs/barebones.png') no-repeat center;
+    background-size: cover;
+  }
+  &.barebones2 {
+    background: url('../../images/bgs/barebones2.png') no-repeat center;
+    background-size: cover;
+  }
+  &.barebones3 {
+    background: url('../../images/bgs/barebones3.png') no-repeat center;
+    background-size: cover;
+  }
+  &.glass {
+    background: url('../../images/bgs/glass.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.chromecast {
+    background: url('../../images/bgs/chromecast.jpg') no-repeat center;
+    background-size: cover;
+  }
+  &.phonetablet {
+    background: url('../../images/bgs/phone-tablet.png') no-repeat center;
+    background-size: 70%;
+  }
+  &.phablet {
+    background: url('../../images/bgs/phablet.png') no-repeat center;
+    background-size: cover;
+  }
+  &.atoms {
+    background: url('../../images/bgs/atoms.jpg') no-repeat center;
+    background-size: contain;
+    background-color: #F2EFDA;
+  }
+  &.comp1 {
+    background: url('../../images/bgs/comp1.png') no-repeat center;
+    background-size: cover;
+  }
+  &.comp2 {
+    background: url('../../images/bgs/comp2.png') no-repeat center;
+    background-size: cover;
+  }
+  &.comp3 {
+    background: url('../../images/bgs/comp3.png') no-repeat center;
+    background-size: cover;
+  }
+  &.maverick {
+    background: url('../../images/gifs/maverick.gif') no-repeat center;
+    background-size: cover;
+  }
+  &.fatunicorn {
+    background: url('../../images/gifs/fatunicorn.gif') no-repeat center;
+    background-size: cover;
+  }
+  &.colbert {
+    background: url('../../images/gifs/colbert.gif') no-repeat center;
+    background-size: cover;
+  }
+  &.nowkiss {
+    background: url('../../images/bgs/now-kiss.png') no-repeat 50% 30px;
+    background-size: contain;
+  }
+  &.mobilestat {
+    background: url('../../images/bgs/mobile-stat.png') no-repeat 50% 70%;
+    background-size: 90%;
+  }
+  &.mobilestat2 {
+    background: url('../../images/bgs/mobilestat2.png') no-repeat 50% 70%;
+    background-size: 90%;
+  }
+  &.molecule {
+    background: url('../../images/bgs/molecule.jpg') no-repeat center;
+    background-size: contain;
+    background-color: #F2EFDA;
   }
 }
 

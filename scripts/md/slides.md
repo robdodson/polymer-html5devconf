@@ -19,16 +19,13 @@ id: who
 
 <aside class="note">
   <section>
-    <p>Introduce yourself, mention contact info</p>
-    <p>
-      Quick show of hands, who here has heard of Polymer or Web Components?
-    </p>
+    <p>Mention contact info</p>
   </section>
 </aside>
 
 ---
 
-body_class: core-fill
+body_class: platform-fill
 content_class: flexbox vleft
 
 <h2 style="margin-top: 33%">Agenda</h2>
@@ -36,10 +33,34 @@ content_class: flexbox vleft
 <aside class="note">
   <section>
     <ul>
-      <li>Where are we with the web today, how did we get here, what's around the corner</li>
-      <li>As we do that I'm going to talk about Web Components, what they are, how they actually work, and what Polymer's relationship is to them</li>
-      <li>Using Web Components to improve our process</li>
+      <li>How do we currently design for the web and how does that have to evolve</li>
+      <li>As we do that, we'll look at these new technologies called Web Components which will make that process a lot better</li>
+      <li>And at the end we're going to look at some possible benefits and cool new tools that will make it easier for us to build responsive sites</li>
     </ul>
+  </section>
+</aside>
+
+---
+
+title: We're gonna talk design
+body_class: fatunicorn
+class: nobackground highlight
+
+---
+
+title: We're gonna talk code
+body_class: colbert
+class: nobackground highlight
+
+---
+
+body_class: nowkiss
+
+<aside class="note">
+  <section>
+    <p>"designers should code"...</p>
+    <p>Because we have to start collaborating and working smarter if we want to succeed in the multi-device world</p>
+    <p><b>Next: Pile of devices</b></p>
   </section>
 </aside>
 
@@ -53,12 +74,44 @@ content_class: flexbox vleft
 <aside class="note">
   <section>
     <p>This is what it's all about.</p>
+    <p>Grappling with designing for a continium of screen sizes</p>
     <p>Moving into the multi-device world.</p>
+    <p><b>Next is Benedict Evans stats</b></p>
   </section>
 </aside>
 
 ---
 
+body_class: mobilestat
+
+<aside class="note">
+  <section>
+    <p>From Benedict Evan's <strong>Mobile is Eating the World</strong></p>
+    <ul>
+      <li>In 2012... 350m PCs sold</li>
+      <li>1.7bn mobile devices</li>
+      <li>1.6bn PCs in use</li>
+      <li>3.2bn mobile users</li>
+      <li></li>
+    </ul>
+  </section>
+</aside>
+
+---
+
+body_class: mobilestat2
+
+<aside class="note">
+  <section>
+    <p>Expecting to add ~2bn smart phone users, ~.5bn tablets. And like no PCs.</p>
+    <p>So that means that as designers and developers, we have to be engineering our sites so they function in a mobile world.</p>
+    <p><strong>More importantly</strong>, we need to improve our processes so preparing for and building for mobile is something we all know how to do.</p>
+  </section>
+</aside>
+
+---
+
+hidden: true
 content_class: flexbox vcenter
 
 <h2 style="font-size: 60px; line-height: 1.25;"><strong>90%</strong> of tasks begun on <strong>one device</strong> will end on <strong>a different one</strong>.</h2>
@@ -66,8 +119,8 @@ content_class: flexbox vcenter
 <aside class="note">
   <section>
     <p>Especially true for tasks that start on mobile devices like looking for a plane ticket or shopping.</p>
-    <p>So that means that as designers and developers, we have to be engineering our sites so they have a continous experience from one screen device to the next.</p>
-    <p>And we need a process to reason about our designs so they're flexible and evolving and work in this multi-device world.</p>
+    <p>So that means that as designers and developers, we have to be engineering our sites so they have a continous experience from one device to the next.</p>
+    <p>And we need a process to reason about our designs so they're flexible and can react to different environments.</p>
   </section>
 </aside>
 
@@ -77,7 +130,7 @@ body_class: paravel
 
 <aside class="note">
   <section>
-    Dave Rupert from Paravel has this wonderful blog post that you all should go read called Responsive Deliverables. And in it, he retells the story of how Paul Rand built up the Westinghouse brand
+    Dave Rupert from Paravel has this wonderful blog post that you all should go read called Responsive Deliverables. And in it, he retells the story of how Paul Rand built up the Westinghouse electronics company's brand
   </section>
 </aside>
 
@@ -87,7 +140,7 @@ body_class: westinghouselogo
 
 <aside class="note">
   <section>
-    Really simple geometric shapes. From that he built up a logo and color scheme and branched out into business cards
+    Really simple geometric shapes. From that he built up a logo and color scheme
   </section>
 </aside>
 
@@ -97,7 +150,9 @@ body_class: westinghousebulb
 
 <aside class="note">
   <section>
-    Packaging, vehicles, etc
+    <p>Business cards, Letterhead, Packaging, Signage</p>
+    <p>What the sides of the delivery trucks were going to look like</p>
+    <p><b>Next: Sum of components</b></p>
   </section>
 </aside>
 
@@ -119,7 +174,7 @@ content_class: flexbox vleft
 
 <aside class="note">
   <section>
-    And that's how we have to think about the things we build. We have to start thinking of them as systems of components that live and react to different screen sizes and not just as static comps.
+    And his point is that this is how we have to be thinking about the things that we build and deliver to our clients.
   </section>
 </aside>
 
@@ -127,47 +182,57 @@ content_class: flexbox vleft
 
 content_class: flexbox vcenter
 
-<h2 style="font-size: 60px; line-height: 1.25;"><strong>Components</strong> &gt; Static Comps</h2>
+<h2 style="font-size: 60px; line-height: 1.25;"><strong>Components</strong> &gt; Static Pages</h2>
 
 <aside class="note">
   <section>
-    How is this thing I’m building going to work on phone?
+    <p>We have to start thinking of them as systems of components that live and react to different screen sizes and not just as static pages.</p>
+    <p><b>Next is phone/tablet photo</b></p>
   </section>
 </aside>
 
 ---
 
-content_class: flexbox vcenter
-
-<h2 style="font-size: 60px; line-height: 1.25;">[shot of phone and tablet]</h2>
-
----
-
-content_class: flexbox vcenter
-
-<h2 style="font-size: 60px; line-height: 1.25;">[shot of phablet]</h2>
-
----
-
-content_class: flexbox vcenter
-
-<h2 style="font-size: 60px; line-height: 1.25;">[shot of glass]</h2>
+body_class: phonetablet
 
 <aside class="note">
   <section>
-    How’s it going to work when it’s 6 centimeters from someone’s eye
+    <p>How is this thing I’m building going to work on phone? or a tablet?</p>
+    <p><b>Next: phablet photo</b></p>
   </section>
 </aside>
 
 ---
 
-content_class: flexbox vcenter
-
-<h2 style="font-size: 60px; line-height: 1.25;">[shot of chromecast]</h2>
+body_class: phablet
 
 <aside class="note">
   <section>
-    Or 16 feet away on their crazy 4K TV
+    <p>Or a phablet</p>
+    <p>Asus Fonepad 7</p>
+    <p><b>Next: Google glass</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: glass
+
+<aside class="note">
+  <section>
+    <p>When it's 6 centimeters away from someone's eye</p>
+    <p><b>Next: Chromecast</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: chromecast
+
+<aside class="note">
+  <section>
+    <p>Or 6 feet away on their crazy 4K TV</p>
+    <p><b>Next: Mini-bootstraps</b></p>
   </section>
 </aside>
 
@@ -179,7 +244,8 @@ content_class: flexbox vcenter
 
 <aside class="note">
   <section>
-    Dave goes on to say that we should be building mini-bootstraps, custom tailored to our client's needs.
+    <p>Dave goes on to say that we should be building mini-bootstraps, custom tailored to our client's needs.</p>
+    <p><b>Next: Change Process</b></p>
   </section>
 </aside>
 
@@ -187,15 +253,199 @@ content_class: flexbox vcenter
 
 content_class: flexbox vcenter
 
-<h2 style="font-size: 60px; line-height: 1.25;">idea => prototype => $$$</h2>
+<h2 style="font-size: 60px; line-height: 1.25;">[shot of Bootstrap docs]</h2>
+
+---
+
+body_class: iceberg
+body_overlay: light-black
+class: nobackground nopadding
+content_class: flexbox vcenter
+
+<h2 style="color: white; font-size: 60px;">Changing Our Process</h2>
 
 <aside class="note">
   <section>
-    <p>So moving from rough ideas, to clickable prototypes and the things that eventually become our final applications and all along the way we're systemizing the design. We're breaking it into components, we're making sure they're responsive, performant, accessiblity</p>
-
-    <p>This is where I think Web Components can come in and help us evolve our processes so we're better prepared to deal with designing and developing for an infinite spectrum of screen sizes and the 5 *billion* mobile users we're expecting to activate in the coming years.</p>
+    <p>Seen this a lot at agencies...</p>
+    <p><b>Next: Comps</b></p>
   </section>
 </aside>
+
+---
+
+body_class: comp1
+
+---
+
+body_class: comp2
+
+---
+
+body_class: comp3
+
+---
+
+class: large
+content_class: flexbox vcenter
+
+<pre class="nohighlight">
+$(document).ready()
+</pre>
+
+---
+
+body_class: maverick
+
+---
+
+class: large
+content_class: flexbox vcenter
+
+<h1 style="font-size: 130px;"><strong>No</strong></h1>
+
+---
+
+class: large
+content_class: flexbox vcenter
+
+<h1 style="font-size: 130px;"><strong>Bad</strong></h1>
+
+<aside class="note">
+  <section>
+    <p>I know this is how we work because I've done this process before at agencies and as a freelancer</p>
+    <p><b>Next: Thinking in Components</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: core-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Thinking <em>in Components</em></h2>
+
+<aside class="note">
+  <section>
+    <p>If we're going to succeed we have to be thinking in responsive components.</p>
+    <p>Approach the process like Paul Rand.</p>
+    <p>Start with basic elements, and build up.</p>
+    <p><b>Next: Style tiles</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: styletiles
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Samantha Warren</li>
+      <li>Style tiles are for when a moodboard is too vague and a comp is too literal.</li>
+      <li>A catalyst for discussions around the preferences and goals of the client</li>
+    </ul>
+  </section>
+</aside>
+
+---
+
+body_class: styletiles2
+
+---
+
+hidden: true
+body_class: elementcollages
+
+---
+
+body_class: flowers2
+body_overlay: core
+class: nobackground nopadding fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Living</em> Style Guides</h2>
+
+<aside class="note">
+  <section>
+    The first part of this process is building living style guides
+  </section>
+</aside>
+
+---
+
+body_class: styleguides
+
+<aside class="note">
+  <section>
+    <p>A traditional style guide, featuring actual code.</p>
+  </section>
+</aside>
+
+---
+
+body_class: barebones
+
+---
+
+body_class: barebones2
+
+---
+
+body_class: barebones3
+
+<aside class="note">
+  <section>
+    <p>Build up over time. Make simple prototypes, find the bits that work, and add them to the style guide</p>
+    <p>Some of the benefits for using a living style guide</p>
+    <ul>
+      <li>easier to test</li>
+      <li>better workflow</li>
+      <li>shared vocabulary</li>
+      <li>useful reference</li>
+    </ul>
+  </section>
+</aside>
+
+---
+
+hidden: true
+body_class: atomicdesign
+
+---
+
+hidden: true
+body_class: atoms
+
+---
+
+hidden: true
+body_class: molecule
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">[video of pattern lab]</h2>
+
+---
+
+hidden: true
+body_class: wireframe
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Salesforce Style Guide</em></h2>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Our tools need to improve</h2>
 
 ---
 
@@ -212,6 +462,40 @@ content_class: flexbox vleft
 
 ---
 
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Your <em>First Website</em></h2>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">[video of first website]</h2>
+
+<aside class="note">
+  <section>
+    <p>So this is everyone's first website. And you might be looking at it like "uh yeah ok whatever" but it demonstrates a few interesting point</p>
+    <p>If we strip out CSS and JavaScript and we go waaaay back to the earliest days of the internet, we actually solve most of the problems we're dealing with today.</p>
+    <ul>
+      <li>The page loads fast</li>
+      <li>It fits in any screen size (we solved responsive design before we had smart phones! so we somehow solved responsive design and then unsolved it)</li>
+      <li>Looks the same in all browsers</li>
+      <li>And it has accessibility built in</li>
+    </ul>
+    <p><strong>Most importantly, anyone in this room could build this site. Think about that for a moment.</strong></p>
+    <p>And let's ask ourselves: why. why is this so easy to build?
+
+    You've got h2... ok that makes a big header
+    p tags... yup that's a paragraph
+    And then you've got select
+  </section>
+</aside>
+
+---
+
+hidden: true
 id: netscape
 #title: Understand where we came from
 class: nobackdrop nobackground
@@ -274,11 +558,11 @@ class: large
 content_class: flexbox vcenter
 
 <pre class="nohighlight">
-&lt;select>
-  &lt;option>Small&lt;/option>
-  &lt;option>Medium&lt;/option>
-  &lt;option>Large&lt;/option>
-&lt;/select>
+&lt;select&gt;
+  &lt;option&gt;Small&lt;/option&gt;
+  &lt;option&gt;Medium&lt;/option&gt;
+  &lt;option&gt;Large&lt;/option&gt;
+&lt;/select&gt;
 </pre>
 
 <select class="corner top right">
@@ -494,6 +778,7 @@ title: Building UI today
     <p>I think it's unfortunate for two reasons:</p>
     <p>1) <strong>You're putting yourself into a silo</strong></p>
     <p>2) <strong>You make it harder for designers and new developers to join in</strong></p>
+    <p><b>Next: Addy's post</b></p>
   </section>
 </aside>
 
@@ -616,11 +901,31 @@ content_class: flexbox vcenter
 body_class: elements-fill
 content_class: flexbox vcenter
 
+<h2 class="faded">[video shadow dom demo]</h2>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
 <h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2>
 
 <aside class="note">
   <section>
     <p>From a high level, these are the sexy selling points of Web Components</p>
+  </section>
+</aside>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Salesforce Style Guide 2</em></h2>
+
+<aside class="note">
+  <section>
+    <p>We can change our element's internals. We can make them have responsiveness, perf, a11y by default. We can make them easier to compose.</p>
   </section>
 </aside>
 
@@ -1258,6 +1563,13 @@ title: Declarative registration
 
 ---
 
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">[slide for passing in content]</h2>
+
+---
+
 id: declarative-registration-proto
 title: Declarative registration
 #subtitle: Declarative registration with prototypes
@@ -1779,24 +2091,14 @@ content_class: flexbox vleft
 
 ---
 
-body_class: iceberg
-body_overlay: light-black
-class: nobackground nopadding
+body_class: elements-fill
 content_class: flexbox vcenter
 
-<h2 style="color: white; font-size: 60px;">Changing Our Process</h2>
+<h2 class="faded">Designer demo</h2>
 
 ---
 
-body_class: flowers2
-body_overlay: core
-class: nobackground nopadding fill
-content_class: flexbox vcenter
-
-<h2 class="faded"><em>Living</em> Style Guides</h2>
-
----
-
+hidden: true
 body_class: tracks
 body_overlay: elements
 class: nobackground nopadding fill
