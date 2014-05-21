@@ -243,8 +243,8 @@ body {
     background-color: black;
   }
   &.westinghousebulb {
-    background: url('../../images/bgs/westinghouse-bulb.jpeg') no-repeat center;
-    background-size: contain;
+    background: url('../../images/bgs/westinghouse-side.jpg') no-repeat center;
+    background-size: cover;
   }
   &.paralysis {
     background: url('../../images/bgs/paralysis.png') no-repeat 50% 10%;
@@ -367,6 +367,10 @@ body {
     background: url('../../images/gifs/colbert.gif') no-repeat center;
     background-size: cover;
   }
+  &.bootstrap {
+    background: url('../../images/bgs/bootstrap.png') no-repeat 50% 5%;
+    background-size: cover;
+  }
   &.nowkiss {
     background: url('../../images/bgs/now-kiss.png') no-repeat 50% 30px;
     background-size: contain;
@@ -383,6 +387,10 @@ body {
     background: url('../../images/bgs/molecule.jpg') no-repeat center;
     background-size: contain;
     background-color: #F2EFDA;
+  }
+  &.devices {
+    background: url('../../images/bgs/devices.jpg') no-repeat 50% 55%;
+    background-size: cover;
   }
 }
 
@@ -1308,4 +1316,25 @@ figcaption a {
 
 .nopadding {
   padding: 0;
+}
+
+.citation {
+  position: absolute;
+  bottom: -50px;
+  right: -5%;
+  color: #FAFAFA;
+  font-size: 14px;
+
+  a {
+    color: #FAFAFA;
+    border-bottom: none;
+  }
+}
+
+.citation.inverse {
+  color: #6D7074;
+
+  a {
+    color: #6D7074;
+  }
 }

@@ -66,10 +66,9 @@ body_class: nowkiss
 
 ---
 
-body_class: platform-fill
-content_class: flexbox vleft
+body_class: devices
 
-<h2 style="margin-top: 33%">[shot of devices]</h2>
+<p class="citation">Source: Brad Frost, <a href="http://bit.ly/1o0g7eW">http://bit.ly/1o0g7eW</a></p>
 
 <aside class="note">
   <section>
@@ -83,6 +82,8 @@ content_class: flexbox vleft
 ---
 
 body_class: mobilestat
+
+<p class="citation inverse">Source: Benedict Evans, <a href="http://slidesha.re/1gJ0Lcq">http://slidesha.re/1gJ0Lcq</a></p>
 
 <aside class="note">
   <section>
@@ -100,6 +101,8 @@ body_class: mobilestat
 ---
 
 body_class: mobilestat2
+
+<p class="citation inverse">Source: Benedict Evans, <a href="http://slidesha.re/1gJ0Lcq">http://slidesha.re/1gJ0Lcq</a></p>
 
 <aside class="note">
   <section>
@@ -251,9 +254,7 @@ content_class: flexbox vcenter
 
 ---
 
-content_class: flexbox vcenter
-
-<h2 style="font-size: 60px; line-height: 1.25;">[shot of Bootstrap docs]</h2>
+body_class: bootstrap
 
 ---
 
@@ -301,14 +302,14 @@ body_class: maverick
 class: large
 content_class: flexbox vcenter
 
-<h1 style="font-size: 130px;"><strong>No</strong></h1>
+<h1 style="font-size: 130px;"><strong>No.</strong></h1>
 
 ---
 
 class: large
 content_class: flexbox vcenter
 
-<h1 style="font-size: 130px;"><strong>Bad</strong></h1>
+<h1 style="font-size: 130px;"><strong>Bad.</strong></h1>
 
 <aside class="note">
   <section>
@@ -337,6 +338,8 @@ content_class: flexbox vcenter
 
 body_class: styletiles
 
+<p class="citation inverse" style="bottom: -8%">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
+
 <aside class="note">
   <section>
     <ul>
@@ -350,6 +353,8 @@ body_class: styletiles
 ---
 
 body_class: styletiles2
+
+<p class="citation">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
 
 ---
 
@@ -373,6 +378,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: styleguides
 
 <aside class="note">
@@ -383,14 +389,17 @@ body_class: styleguides
 
 ---
 
+hidden: true
 body_class: barebones
 
 ---
 
+hidden: true
 body_class: barebones2
 
 ---
 
+hidden: true
 body_class: barebones3
 
 <aside class="note">
@@ -423,6 +432,7 @@ body_class: molecule
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -439,6 +449,13 @@ body_class: elements-fill
 content_class: flexbox vcenter
 
 <h2 class="faded"><em>Salesforce Style Guide</em></h2>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>A single source of truth</em></h2>
 
 ---
 
@@ -784,7 +801,10 @@ title: Building UI today
 
 ---
 
+hidden: true
 body_class: paralysis
+
+<p class="citation inverse" style="bottom: -9%; right: -10%;">Source: Addy Osmani, <br><a href="http://bit.ly/1fWibNc">http://bit.ly/1fWibNc</a></p>
 
 <aside class="note" style="z-index: 1000">
   <section>
@@ -885,6 +905,7 @@ subtitle: The Web Components way
 
 ---
 
+hidden: true
 title: Video's secret DOM
 subtitle: Be like the browser makers
 content_class: flexbox vcenter
@@ -898,6 +919,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -905,6 +927,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -1023,6 +1046,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 id: layers-of-polymer
 class: polymer-diagram
 title: Layers of Polymer
@@ -1332,6 +1356,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 title: Non-visual Elements
 content_class: columns-2
 
@@ -1375,6 +1400,7 @@ content_class: columns-2
 
 ---
 
+hidden: true
 id: core-layout-demo
 title: Everything is an element
 subtitle: flexbox...using DOM
@@ -2088,6 +2114,19 @@ body_class: platform-fill
 content_class: flexbox vleft
 
 <h2 class="faded" style="font-size: 52px;">Additional features include <em>Mutation Observers</em>, <em>Pointer Events</em>, <em>Web Animations</em>, and much more.</h2>
+
+---
+
+body_class: core-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>[What makes a good component]</em></h2>
+
+<aside class="note">
+  <section>
+    <p>http://addyosmani.com/first/</p>
+  </section>
+</aside>
 
 ---
 
