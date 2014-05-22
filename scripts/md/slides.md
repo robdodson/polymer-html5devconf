@@ -57,6 +57,12 @@ title: We're gonna talk code
 body_class: colbert
 class: nobackground highlight
 
+<aside class="note">
+  <section>
+    <p><b>Next: Now Kiss</b></p>
+  </section>
+</aside>
+
 ---
 
 body_class: nowkiss
@@ -79,7 +85,6 @@ body_class: devices
   <section>
     <p>This is what it's all about.</p>
     <p>Grappling with designing for a continium of screen sizes</p>
-    <p>Moving into the multi-device world.</p>
     <p><b>Next is Benedict Evans stats</b></p>
   </section>
 </aside>
@@ -96,10 +101,8 @@ body_class: mobilestat
     <ul>
       <li>In 2012... 350m PCs sold</li>
       <li>1.7bn mobile devices</li>
-      <li>1.6bn PCs in use</li>
-      <li>3.2bn mobile users</li>
-      <li></li>
     </ul>
+    <p><b>Next: 2017</b></p>
   </section>
 </aside>
 
@@ -111,9 +114,9 @@ body_class: mobilestat2
 
 <aside class="note">
   <section>
-    <p>Expecting to add ~2bn smart phone users, ~.5bn tablets. And like no PCs.</p>
     <p>So that means that as designers and developers, we have to be engineering our sites so they function in a mobile world.</p>
     <p><strong>More importantly</strong>, we need to improve our processes so preparing for and building for mobile is something we all know how to do.</p>
+    <p><b>Next: Dave Rupert responsive deliverables</b></p>
   </section>
 </aside>
 
@@ -138,7 +141,11 @@ body_class: paravel
 
 <aside class="note">
   <section>
-    Dave Rupert from Paravel has this wonderful blog post that you all should go read called Responsive Deliverables. And in it, he retells the story of how Paul Rand built up the Westinghouse electronics company's brand
+    <ul>
+      <li>Dave Rupert from Paravel, Responsive Deliverables</li>
+      <li>Paul Rand</li>
+    </ul>
+    <p><b>Next: Westinghouse Logo</b></p>
   </section>
 </aside>
 
@@ -182,7 +189,8 @@ content_class: flexbox vleft
 
 <aside class="note">
   <section>
-    And his point is that this is how we have to be thinking about the things that we build and deliver to our clients.
+    <p>And his point is that this is how we have to be thinking about the things that we build and deliver to our clients.</p>
+    <p><b>Next: Components > Static Pages</b></p>
   </section>
 </aside>
 
@@ -240,7 +248,7 @@ body_class: chromecast
 <aside class="note">
   <section>
     <p>Or 6 feet away on their crazy 4K TV</p>
-    <p><b>Next: Mini-bootstraps</b></p>
+    <p><b>Next: Tiny Bootstraps</b></p>
   </section>
 </aside>
 
@@ -248,18 +256,33 @@ body_class: chromecast
 
 content_class: flexbox vcenter
 
-<h2 style="font-size: 60px; line-height: 1.25;">Mini-bootstraps</h2>
+<figure>
+  <blockquote style="font-size: 49px;">
+    &ldquo;<strong>Responsive deliverables</strong> should look a lot <br>like fully-functioning Twitter <strong>Bootstrap-style</strong> systems <strong>custom tailored</strong> for your clients’ needs.&rdquo;
+  </blockquote>
+  <figcaption>
+    <cite><a href="http://daverupert.com/2013/04/responsive-deliverables/">Responsive Deliverables</a></cite>, Dave Rupert
+  </figcaption>
+</figure>
 
 <aside class="note">
   <section>
-    <p>Dave goes on to say that we should be building mini-bootstraps, custom tailored to our client's needs.</p>
-    <p><b>Next: Change Process</b></p>
+    <p>Dave goes on to say that we should be building tiny bootstraps, custom tailored to our client's needs.</p>
+    <p><b>Next: Bootstrap Example</b></p>
   </section>
 </aside>
 
 ---
 
 body_class: bootstrap
+
+<aside class="note">
+  <section>
+    <p>Good starting point but you look like everyone else</p>
+    <p>Typically have to remove a lot of stuff</p>
+    <p><b>Next: Living Style Guides</b></p>
+  </section>
+</aside>
 
 ---
 
@@ -271,12 +294,17 @@ content_class: flexbox vcenter
 
 <aside class="note">
   <section>
-    The first part of this process is building living style guides
+    <ul>
+      <li>Dave recommends doing this custom</li>
+      <li>I'll show you an example from Salesforce</li>
+    </ul>
+    <p><b>Next: Salesforce example</b></p>
   </section>
 </aside>
 
 ---
 
+hidden: true
 body_class: styleguides
 
 <p class="citation inverse">Source: Anna Debenham, <a href="http://bit.ly/1huoY4B">http://bit.ly/1huoY4B</a></p>
@@ -286,13 +314,19 @@ body_class: styleguides
 body_class: elements-fill
 content_class: flexbox vcenter
 
-<h2 class="faded"><em>Salesforce Style Guide</em></h2>
+<h2 class="faded"><em><a href="http://sfdc-styleguide.herokuapp.com/">Salesforce Style Guide</a></em></h2>
 
 ---
 
 id: salesforce-demo
 
-<video src="videos/salesforce.mp4" width="100%"></video>
+<video src="videos/salesforce.mp4" width="100%" controls></video>
+
+<aside class="note">
+  <section>
+    <p>Next: Single source of truth</p>
+  </section>
+</aside>
 
 ---
 
@@ -301,8 +335,35 @@ content_class: flexbox vcenter
 
 <h2 class="faded">A <em>single source</em> of truth</h2>
 
+<aside class="note">
+  <section>
+    <p>Brings designers, developers and other stakeholders to one place</p>
+    <p>Gives you an area to iterate on ideas and deconstruct things</p>
+    <p><b>Test responsiveness of all of your components!</b></p>
+    <p>But there's a problem...</p>
+    <p><b>Next: Calendar example</b></p>
+  </section>
+</aside>
+
 ---
 
+id: salesforce-calendar
+
+<video src="videos/salesforce-calendar.mp4" width="100%" controls></video>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Difficult to stay in sync</li>
+      <li>Some places throw away the designer's code</li>
+    </ul>
+    <p><b>Next: Building UI today</b></p>
+  </section>
+</aside>
+
+---
+
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -646,7 +707,7 @@ title: Building UI today
     <p>I think it's unfortunate for two reasons:</p>
     <p>1) <strong>You're putting yourself into a silo</strong></p>
     <p>2) <strong>You make it harder for designers and new developers to join in</strong></p>
-    <p><b>Next: Addy's post</b></p>
+    <p><b>Next: x-tabs</b></p>
   </section>
 </aside>
 
@@ -692,13 +753,27 @@ content_class: flexbox vleft
 
 <aside class="note">
   <section>
-    <p>Let me show you an example of how this works in practice...</p>
+    <p>What we're talking about is...</p>
+    <p><b>Next: Selling points</b></p>
   </section>
 </aside>
 
 ---
 
-hidden: true
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2>
+
+<aside class="note">
+  <section>
+    <p>From a high level, these are the awesome selling points of Web Components</p>
+    <p><b>Creating a carousel</b></p>
+  </section>
+</aside>
+
+---
+
 title: Creating a carousel
 subtitle: The old way
 
@@ -736,7 +811,6 @@ subtitle: The old way
 
 ---
 
-hidden: true
 title: Creating a carousel
 subtitle: The Web Components way
 
@@ -751,19 +825,25 @@ subtitle: The Web Components way
 <aside class="note">
   <section>
     <p>With Web Components we can do something like this. Usign the img-carousel tag, I can just add the information that's relevant to *my* application, and forget about all the boilerplate.</p>
+    <p><b>I'll show you how that's possible</b></p>
+    <p><b>Next: Video's Shadow DOM</b></p>
   </section>
 </aside>
 
 ---
 
-body_class: elements-fill
-content_class: flexbox vcenter
+id: video-shadow-dom
 
-<h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2>
+<video src="videos/video-shadow-dom.mp4" width="100%" controls></video>
 
 <aside class="note">
   <section>
-    <p>From a high level, these are the sexy selling points of Web Components</p>
+    <ul>
+      <li>Get a lot for free</li>
+      <li>Browser makers have been holding out on us</li>
+      <li><b>What does it look like when we have this power?</b></li>
+    </ul>
+    <p><b>Next: Salesforce components</b></p>
   </section>
 </aside>
 
@@ -783,21 +863,29 @@ content_class: flexbox vcenter
 
 ---
 
-body_class: elements-fill
-content_class: flexbox vcenter
+id: salesforce-demo2
 
-<h2 class="faded">[video shadow dom demo]</h2>
+<video src="videos/salesforce-demo2.mp4" width="100%" controls></video>
+
+<aside class="note">
+  <section>
+    <p>We can change our element's internals.</p>
+    <p>Developers can add cool javascript heavy features.</p>
+    <p><b>Next: Responsive by default!!!</b></p>
+  </section>
+</aside>
 
 ---
 
 body_class: elements-fill
 content_class: flexbox vcenter
 
-<h2 class="faded"><em>Salesforce Style Guide 2</em></h2>
+<h2 class="faded"><em>Responsive</em> + <em>Accessible</em> + <em>Performant</em></h2>
 
 <aside class="note">
   <section>
-    <p>We can change our element's internals. We can make them have responsiveness, perf, a11y by default. We can make them easier to compose.</p>
+    <p>We can recreate HTML for the multi-device world</p>
+    <p><b>Next: Specs</b></p>
   </section>
 </aside>
 
@@ -860,13 +948,9 @@ content_class: flexbox vcenter
 <aside class="note">
   <section>
     <p>There's no one Web Components technology, it's actually 4 different technologies which collectively form the Web Components umbrella</p>
-    <ul>
-      <li>Templates give you the ability to create reusable bits of DOM markup. If you've used a library like handlebars or mustache before then it should feel familiar. The difference now is that there is an actual &lt;template&gt; tag in the browser</li>
-      <li>Custom elements give you the ability to create your own custom HTML elements. The x-tabs example from before is an instance of a custom element.</li>
-      <li>Shadow DOM is the ability to create scoped styles and encapsulated markup. So you can put some HTML and CSS inside of the Shadow DOM and you're guaranteed your element will render as intended.</li>
-      <li>Finally HTML Imports give you the ability to load external HTML files into your document. These files can contain resources like CSS, JavaScript and (most likely) custom element defintions.</li>
-    </ul>
-    <p>Talk about support chart. It's good, but developers won't use Web Components until they're supported in *all* browsers. But we want developer feedback before we ship these things. For that reason we created Polymer.</p>
+    <p>Support is good!</p>
+    <p>Chicken and egg problem</p>
+    <p><b>Next: Polymer!</b></p>
   </section>
 </aside>
 
@@ -889,7 +973,8 @@ content_class: flexbox vleft
   <section>
     <p>It gives you the power of web components today</p>
     <p>You can start working with them and give feedback to the browser makers</p>
-    <p>So... how do we do that?</p>
+    <p><b>Two ways to work with elements.</b></p>
+    <p><b>Next: Using Elements</b></p>
   </section>
 </aside>
 
@@ -1051,7 +1136,7 @@ content_class: flexbox vcenter
 ---
 
 id: polymer-ui-elements
-title: UI elements
+title: Core elements
 
 <div class="pull-right flexbox vcenter" style="width: 40%;margin-top:-100px;">
   <img src="images/polymer/uielements/polymer-ui-tabs.png" style="width:100%">
@@ -1086,12 +1171,16 @@ title: UI elements
 
 <aside class="note">
   <section>
-    <p>Stress that elements are experimental (and visually disjointed) but let them know we're building something real.</p>
-    <p>To help you out we've created some reusable UI elements. So we have things like polymer-ui-card (click on link and show demo), which is a nice swipeable Google Now style card</p>
-    <p>We've also got polymer-ui-sidebar, (click on link and show demo) which is your classic expanding/collapsing sidebar</p>
-    <p>And yes, we even include our own version of tabs!</p>
+    <p>Created because everyone will need them</p>
+    <p><b>Next: core-drawer-panel video</b></p>
   </section>
 </aside>
+
+---
+
+id: core-drawer-panel-demo
+
+<video src="videos/core-drawer-panel.mp4" width="100%" controls></video>
 
 ---
 
@@ -1127,7 +1216,12 @@ subtitle: Core Toolbar
 
 <aside class="note">
   <section>
-    <p>So this is the polymer-tabs element. To load it into your application you just import the polymer-ui-tabs.html file using an html import (point out we're doing that in the top right corner) and then the element is ready to use. No setup necessary!</p>
+    <ul>
+      <li>Load in platform.js, Polymer's polyfill layer</li>
+      <li>Import core-toolbar and core-icon-button</li>
+      <li>Use it!</li>
+    </ul>
+    <p><b>Next: core-tooltip</b></p>
   </section>
 </aside>
 
@@ -1156,6 +1250,13 @@ subtitle: Core Tooltip
 </output>
 
 </div>
+
+<aside class="note">
+  <section>
+    <p>See people jumping into js to do this</p>
+    <p><b>Next: Creating elements</b></p>
+  </section>
+</aside>
 
 ---
 
@@ -1367,7 +1468,7 @@ content_class: flexbox vcenter
 
 <aside class="note">
   <section>
-    <p>We've talked a bit about using elements, now let's look at how you can create your own elements. Polymer is going to make this really easy for you!</p>
+    <p>Polymer is going to make this really easy for you!</p>
   </section>
 </aside>
 
@@ -1455,17 +1556,19 @@ title: Declarative registration
 
 <aside class="note">
   <section>
-    <p>This is a Polymer element definition. It's important to indicate that the name attribute must have a dash in it. That's to prevent future versions of HTML from stepping on your tag.</p>
-    <p>Anything inside of the template will be stamped out when the parser sees your new tag</p>
-    <p>Note that the style tag is *not* affecting the h2 at the top of the slide that says "Declarative Registration". That's because the styles are scoped by the Shadow DOM</p>
-    <p>Mention noscript. That attribute tells Polymer that you're not including any JavaScript with your element.</p>
+    <ul>
+      <li>Give your element a name. <b>Must have dash</b></li>
+      <li>Put your markup in template</li>
+      <li>Point out style encapsulation</li>
+      <li>Point out noscript</li>
+      <p><b>Next: Element prototypes</b></p>
+    </ul>
   </section>
 </aside>
 
 ---
 
-id: declarative-registration
-title: Declarative registration
+title: Element Prototypes
 #subtitle: Declarative registration
 
 <pre class="corner prettyprint">
@@ -1496,10 +1599,20 @@ title: Declarative registration
   </output>
 </div>
 
+<aside class="note">
+  <section>
+    <ul>
+      <li>Add a script tag after your template</li>
+      <li>Add properties and methods to your prototype</li>
+      <li>Use bindings inside of an element!</li>
+    </ul>
+    <p><b>Next: Publish properties</b></p>
+  </section>
+</aside>
+
 ---
 
-id: declarative-registration
-title: Declarative registration
+title: Published Properties
 #subtitle: Declarative registration
 
 <pre class="corner prettyprint">
@@ -1507,7 +1620,7 @@ title: Declarative registration
 &lt;link rel="import" href="<span alt="bower install polymer" data-tooltip="bower install polymer">polymer.html</span>">
 </pre>
 
-<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;">
 &lt;polymer-element name="name-tag" <b>attributes="owner"</b>&gt;
   &lt;template&gt;
     &lt;h1&gt;Hey, my name is <b>{{owner}}</b>&lt;/h1&gt;
@@ -1520,7 +1633,7 @@ title: Declarative registration
 &lt;/polymer-element&gt;
 </pre>
 
-<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;">
 &lt;name-tag owner="Eric"&gt;&lt;/name-tag&gt;
 </pre>
 
@@ -1529,6 +1642,17 @@ title: Declarative registration
     <name-tag owner="Eric"></name-tag>
   </output>
 </div>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Publish properties from your prototype</li>
+      <li>Use attributes attribute</li>
+      <li>Element is now configurable</li>
+    </ul>
+    <p><b>Next: Using content</b></p>
+  </section>
+</aside>
 
 ---
 
@@ -1561,10 +1685,19 @@ title: Working with content
   </output>
 </div>
 
+<aside class="note">
+  <section>
+    <ul>
+      <li>Lots of text or more html</li>
+      <li>Invite content from your host element into SD</li>
+    </ul>
+    <p><b>Next: Event Bindings</b></p>
+  </section>
+</aside>
+
 ---
 
-id: declarative-registration-proto
-title: Declarative registration
+title: Event Bindings
 #subtitle: Declarative registration with prototypes
 
 <pre class="corner prettyprint">
@@ -1593,10 +1726,11 @@ title: Declarative registration
 
 <aside class="note">
   <section>
-    <p>If you do want to include JavaScript with your element you can omit the noscript attribute and include a script tag that calls the Polymer constructor.</p>
-    <p>The Polymer constructor requires that you pass in your element's name, and a protoyper object. Properties and methods that you add to this prototype object are available on every instance of your new tag.</p>
-    <p>In this example I've added some code to the page that listens for click events and calls target.sayHello().  (click on the elements)</p>
-    <p>So easy to create an API for your element... but I want to add some data to this thing!</p>
+    <ul>
+      <li>Use an event binding to bind to an action</li>
+      <li>Event Bindings let you manage mouse, touch, pointer events</li>
+    </ul>
+    <p><b>Next: How do I write a good component?</b></p>
   </section>
 </aside>
 
@@ -2084,12 +2218,35 @@ content_class: flexbox vleft
 
 ---
 
-# title: foo
-body_class: first
+body_class: core-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">How do I write a <em>good component</em>?</h2>
 
 <aside class="note">
   <section>
-    <p>http://addyosmani.com/first/</p>
+    <ul>
+      <li>One question that comes up a lot is how do I write a good component?</li>
+      <li>How do I do things the Polymer Way</li>
+    </ul>
+    <p><b>Next: First guide</b></p>
+  </section>
+</aside>
+
+---
+
+# title: foo
+body_class: first
+
+<p class="citation">Source: Addy Osmani, <a href="http://addyosmani.com/first">http://addyosmani.com/first</a></p>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Addy put together a guide</li>
+      <li>addyosmani.com/first</li>
+    </ul>
+    <p><b>Next: Walkthrough first</b></p>
   </section>
 </aside>
 
@@ -2106,13 +2263,18 @@ content_class: flexbox vleft
   <li><strong>(T)</strong>estable</li>
 </ul>
 
----
-
-body_class: first
+<p class="citation inverse">Source: Addy Osmani, <a href="http://addyosmani.com/first">http://addyosmani.com/first</a></p>
 
 <aside class="note">
   <section>
-    <p>http://addyosmani.com/first/</p>
+    <ul>
+      <li>Do one thing and do it well. <b>SRP</b></li>
+      <li>Address a specific concern. Don't know about other internals.</li>
+      <li>Don't write something that's super app specific. Compose out of smaller general parts. Gravatar example.</li>
+      <li>Try to break your problems down into smaller pieces.</li>
+      <li>Bi-product of things being small and independent.</li>
+    </ul>
+    <p><b>Next: Changing our process</b></p>
   </section>
 </aside>
 
@@ -2127,8 +2289,9 @@ content_class: flexbox vcenter
 
 <aside class="note">
   <section>
-    <p>Seen this a lot at agencies...</p>
-    <p><b>Next: Comps</b></p>
+    <p>Talked style guides and Web components</p>
+    <p>How do you put this into practice?</p>
+    <p><b>Next: Think in components</b></p>
   </section>
 </aside>
 
@@ -2210,10 +2373,12 @@ body_class: styletiles
 <aside class="note">
   <section>
     <ul>
+      <li>If just starting a project...</li>
       <li>Samantha Warren</li>
       <li>Style tiles are for when a moodboard is too vague and a comp is too literal.</li>
-      <li>A catalyst for discussions around the preferences and goals of the client</li>
+      <li>Thinking in components from the start</li>
     </ul>
+    <p><b>Next: Example style tile</b></p>
   </section>
 </aside>
 
@@ -2223,6 +2388,15 @@ body_class: styletiles2
 
 <p class="citation">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
 
+<aside class="note">
+  <section>
+    <ul>
+      <li>From here lead into creating a style guide</li>
+    </ul>
+    <p><b>Next: Create Living Style Guides</b></p>
+  </section>
+</aside>
+
 ---
 
 body_class: core-fill
@@ -2230,20 +2404,29 @@ content_class: flexbox vcenter
 
 <h2 class="faded">Create Living <em>Style Guides</em></h2>
 
+<aside class="note">
+  <section>
+    <p><b>Next: Pattern Lab</b></p>
+  </section>
+</aside>
+
 ---
 
+id: pattern-lab
 body_class: core-fill
-content_class: flexbox vcenter
 
-<h2 class="faded">[video of pattern lab]</h2>
+<h2 style="text-align: center; margin: -80px 0 30px;">Pattern Lab</h2>
+<video src="videos/pattern-lab.mp4" width="100%" controls></video>
 
----
+<p class="citation">Source: Pattern Lab, <a href="http://pattern-lab.info/">http://pattern-lab.info/</a></p>
 
-hidden: true
-body_class: elements-fill
-content_class: flexbox vcenter
-
-<h2 class="faded">[video of pattern lab]</h2>
+<aside class="note">
+  <section>
+    <p>Gives you a starting point</p>
+    <p>Has buttons for testing responsiveness</p>
+    <p><b>Next: Build with Polymer</b></p>
+  </section>
+</aside>
 
 ---
 
@@ -2335,3 +2518,22 @@ content_class: flexbox vcenter centered
 <div class="build">
 <h2><a href="http://polymer-project.org"><span class="elements">polymer</span><span class="hide">-</span><span class="core">project</span><span class="hide">.</span><span class="platform">org</span></a></h2>
 </div>
+
+<aside class="note">
+  <section>
+    <p><b>Next: Designer Demo!</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em><a href="http://github.com/PolymerLabs/designer">github.com/PolymerLabs/designer</a></em></h2>
+
+<aside class="note">
+  <section>
+    <p><b>Next: THANK YOU!!!</b></p>
+  </section>
+</aside>

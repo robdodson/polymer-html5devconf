@@ -377,7 +377,7 @@ body {
     background-size: cover;
   }
   &.bootstrap {
-    background: url('../../images/bgs/bootstrap.png') no-repeat 50% 5%;
+    background: url('../../images/bgs/bootstrap.png') no-repeat center;
     background-size: cover;
   }
   &.nowkiss {
@@ -1362,4 +1362,19 @@ figcaption a {
 
 .no-icon li::before {
   background: none;
+}
+
+#next-slide-area,
+#prev-slide-area {
+  display: none;
+}
+
+h2 a {
+  color: white;
+  border-bottom: 1px solid white;
+
+  &:hover {
+    color: rgba(#FFF, 0.5) !important;
+    border-bottom: 1px solid rgba(#FFF, 0.5) !important;
+  }
 }
