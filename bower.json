@@ -1,5 +1,5 @@
 {
-  "name": "yahoo-polymer",
+  "name": "polymer-html5devconf",
   "version": "0.0.0",
   "authors": [
     "Rob Dodson <robdodson@google.com>"
@@ -18,13 +18,15 @@
     "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.1",
     "core-toolbar": "Polymer/core-toolbar#~0.2.3",
     "core-icon-button": "Polymer/core-icon-button#~0.2.3",
-    "core-layout": "Polymer/core-layout#master"
+    "core-layout": "Polymer/core-layout#master",
+    "core-collapse": "Polymer/core-collapse#~0.2.4",
+    "core-tooltip": "Polymer/core-tooltip#master"
   },
   "resolutions": {
-    "polymer": "0.2.3",
-    "platform": "0.2.3",
-    "core-component-page": "0.2.3",
-    "core-action-icons": "0.2.3",
-    "core-layout": "master"
+    "core-layout": "master",
+    "polymer": "master",
+    "core-action-icons": "master",
+    "core-component-page": "master",
+    "platform": "master"
   }
 }

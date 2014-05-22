@@ -275,6 +275,45 @@ function initDemos() {
 
   //   prettyPrint();
   // }
+  // 
+  (function() {
+    var demo = $('#salesforce-demo');
+    var video = demo.querySelector('video');
+    demo.addEventListener('keydown', function(e) {
+      console.log('keydown');
+      if (e.keyCode == 13) {
+        console.log('enter pressed');
+        console.log('video', video);
+        video.webkitRequestFullscreen();
+      }
+    });
+  })();
+
+  (function() {
+    var slide = $('#salesforce-demo');
+    var video = slide.$('video');
+
+    slide.listen('slideenter', function(e) {
+      document.addEventListener('keydown', toggleVideo);
+    });
+
+    slide.listen('slideleave', function() {
+      video.pause();
+      document.removeEventListener('keydown', toggleVideo);
+    });
+
+    var toggleVideo = function(e) {
+      // Enter key
+      if (e.keyCode == 13) {
+        if (video.paused) {
+          video.webkitRequestFullscreen();
+          return video.play();
+        }
+
+        video.pause();
+      }
+    };
+  })();
 
   (function() {
     var demo = $('#polymer-ajax-demo');

@@ -4,11 +4,10 @@
     <style>
     h2 { font-size: 40px; }
     </style>
-    <h2 on-click="{{sayHello}}">I can say hello</h2>
+    <h2 on-tap="{{sayHello}}">I can say hello</h2>
   </template>
   <script>
   Polymer('hello-element', {
-    ready: function() {},
     sayHello: function() { alert('Howdy folks!'); }
   });
   </script>

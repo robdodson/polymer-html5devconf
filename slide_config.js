@@ -2,10 +2,10 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'Polymer',
-    subtitle: 'Q2 MTV Sprint',
+    subtitle: '',
     eventInfo: {
-      title: 'Google',
-      date: 'May 05, 2014'
+      title: 'HTML5 Dev Conf',
+      date: 'May 22, 2014'
     },
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: false, // Controlled in app.js 
@@ -23,12 +23,12 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Polymer',
+    name: 'Rob Dodson',
     //company: 'Chrome Team',
-    gplus: 'http://google.com/+PolymerProject',
-    twitter: '@polymer',
-    www: 'http://polymer-project.org',
-    github: 'http://github.com/Polymer'
+    gplus: 'http://google.com/+RobDodson',
+    twitter: '@rob_dodson',
+    www: 'http://robdodson.me',
+    github: 'http://github.com/robdodson'
   }]
 };
 

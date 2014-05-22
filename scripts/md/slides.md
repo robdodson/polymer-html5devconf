@@ -19,12 +19,17 @@ id: who
 
 <aside class="note">
   <section>
-    <p>Mention contact info</p>
+    <ul>
+      <li>How do we currently design for the web and how does that have to evolve</li>
+      <li>As we do that, we'll look at these new technologies called Web Components which will make that process a lot better</li>
+      <li>And at the end we're going to look at some possible benefits and cool new tools that will make it easier for us to build responsive sites</li>
+    </ul>
   </section>
 </aside>
 
 ---
 
+hidden: true
 body_class: platform-fill
 content_class: flexbox vleft
 
@@ -258,113 +263,7 @@ body_class: bootstrap
 
 ---
 
-body_class: iceberg
-body_overlay: light-black
-class: nobackground nopadding
-content_class: flexbox vcenter
-
-<h2 style="color: white; font-size: 60px;">Changing Our Process</h2>
-
-<aside class="note">
-  <section>
-    <p>Seen this a lot at agencies...</p>
-    <p><b>Next: Comps</b></p>
-  </section>
-</aside>
-
----
-
-body_class: comp1
-
----
-
-body_class: comp2
-
----
-
-body_class: comp3
-
----
-
-class: large
-content_class: flexbox vcenter
-
-<pre class="nohighlight">
-$(document).ready()
-</pre>
-
----
-
-body_class: maverick
-
----
-
-class: large
-content_class: flexbox vcenter
-
-<h1 style="font-size: 130px;"><strong>No.</strong></h1>
-
----
-
-class: large
-content_class: flexbox vcenter
-
-<h1 style="font-size: 130px;"><strong>Bad.</strong></h1>
-
-<aside class="note">
-  <section>
-    <p>I know this is how we work because I've done this process before at agencies and as a freelancer</p>
-    <p><b>Next: Thinking in Components</b></p>
-  </section>
-</aside>
-
----
-
 body_class: core-fill
-content_class: flexbox vcenter
-
-<h2 class="faded">Thinking <em>in Components</em></h2>
-
-<aside class="note">
-  <section>
-    <p>If we're going to succeed we have to be thinking in responsive components.</p>
-    <p>Approach the process like Paul Rand.</p>
-    <p>Start with basic elements, and build up.</p>
-    <p><b>Next: Style tiles</b></p>
-  </section>
-</aside>
-
----
-
-body_class: styletiles
-
-<p class="citation inverse" style="bottom: -8%">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
-
-<aside class="note">
-  <section>
-    <ul>
-      <li>Samantha Warren</li>
-      <li>Style tiles are for when a moodboard is too vague and a comp is too literal.</li>
-      <li>A catalyst for discussions around the preferences and goals of the client</li>
-    </ul>
-  </section>
-</aside>
-
----
-
-body_class: styletiles2
-
-<p class="citation">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
-
----
-
-hidden: true
-body_class: elementcollages
-
----
-
-body_class: flowers2
-body_overlay: core
 class: nobackground nopadding fill
 content_class: flexbox vcenter
 
@@ -378,70 +277,9 @@ content_class: flexbox vcenter
 
 ---
 
-hidden: true
 body_class: styleguides
 
-<aside class="note">
-  <section>
-    <p>A traditional style guide, featuring actual code.</p>
-  </section>
-</aside>
-
----
-
-hidden: true
-body_class: barebones
-
----
-
-hidden: true
-body_class: barebones2
-
----
-
-hidden: true
-body_class: barebones3
-
-<aside class="note">
-  <section>
-    <p>Build up over time. Make simple prototypes, find the bits that work, and add them to the style guide</p>
-    <p>Some of the benefits for using a living style guide</p>
-    <ul>
-      <li>easier to test</li>
-      <li>better workflow</li>
-      <li>shared vocabulary</li>
-      <li>useful reference</li>
-    </ul>
-  </section>
-</aside>
-
----
-
-hidden: true
-body_class: atomicdesign
-
----
-
-hidden: true
-body_class: atoms
-
----
-
-hidden: true
-body_class: molecule
-
----
-
-hidden: true
-body_class: elements-fill
-content_class: flexbox vcenter
-
-<h2 class="faded">[video of pattern lab]</h2>
-
----
-
-hidden: true
-body_class: wireframe
+<p class="citation inverse">Source: Anna Debenham, <a href="http://bit.ly/1huoY4B">http://bit.ly/1huoY4B</a></p>
 
 ---
 
@@ -452,10 +290,16 @@ content_class: flexbox vcenter
 
 ---
 
+id: salesforce-demo
+
+<video src="videos/salesforce.mp4" width="100%"></video>
+
+---
+
 body_class: elements-fill
 content_class: flexbox vcenter
 
-<h2 class="faded"><em>A single source of truth</em></h2>
+<h2 class="faded">A <em>single source</em> of truth</h2>
 
 ---
 
@@ -466,6 +310,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vleft
 
@@ -479,6 +324,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -486,6 +332,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -571,6 +418,7 @@ body_class: netscape
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -603,6 +451,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 content_class: flexbox vcenter
 
 <h2>Elements are the building blocks of the web</h2>
@@ -756,6 +605,7 @@ var foo = mySelect.selectedIndex;
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vleft
 
@@ -763,6 +613,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 title: This happened
 body_class: readable
 class: nobackground highlight
@@ -905,6 +756,19 @@ subtitle: The Web Components way
 
 ---
 
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2>
+
+<aside class="note">
+  <section>
+    <p>From a high level, these are the sexy selling points of Web Components</p>
+  </section>
+</aside>
+
+---
+
 hidden: true
 title: Video's secret DOM
 subtitle: Be like the browser makers
@@ -919,25 +783,10 @@ content_class: flexbox vcenter
 
 ---
 
-hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
 <h2 class="faded">[video shadow dom demo]</h2>
-
----
-
-hidden: true
-body_class: elements-fill
-content_class: flexbox vcenter
-
-<h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2>
-
-<aside class="note">
-  <section>
-    <p>From a high level, these are the sexy selling points of Web Components</p>
-  </section>
-</aside>
 
 ---
 
@@ -1284,6 +1133,32 @@ subtitle: Core Toolbar
 
 ---
 
+title: Everything is an element
+subtitle: Core Tooltip
+
+<pre class="corner prettyprint">
+&lt;script src="<span alt="bower install Polymer/polymer" data-tooltip="bower install Polymer/polymer">platform.js</span>">&lt;/script>
+&lt;link rel="import" href="<span alt="bower install Polymer/core-Tooltip" data-tooltip="bower install Polymer/core-tooltip">core-tooltip.html</span>">
+</pre>
+
+<pre class="prettyprint" style="font-size:28px; line-height: 1.2;">
+&lt;core-tooltip large label='Well, hello there!' position="top"&gt;
+  &lt;button&gt;Roll over this!&lt;/button&gt;
+&lt;/core-tooltip&gt;
+</pre>
+
+<div class="component-demo">
+<link rel="import" href="bower_components/core-tooltip/core-tooltip.html">
+<output style="display: block; padding: 70px 50px 40px; text-align: center; zoom: 1.5;">
+  <core-tooltip large label='Well, hello there!' position="top">
+    <button>Roll over this!</button>
+  </core-tooltip>
+</output>
+
+</div>
+
+---
+
 hidden: true
 id: polymer-ui-collapsible-demo
 title: Everything is an element
@@ -1589,10 +1464,102 @@ title: Declarative registration
 
 ---
 
-body_class: elements-fill
-content_class: flexbox vcenter
+id: declarative-registration
+title: Declarative registration
+#subtitle: Declarative registration
 
-<h2 class="faded">[slide for passing in content]</h2>
+<pre class="corner prettyprint">
+&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
+&lt;link rel="import" href="<span alt="bower install polymer" data-tooltip="bower install polymer">polymer.html</span>">
+</pre>
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;polymer-element name="name-tag"&gt;
+  &lt;template&gt;
+    &lt;h1&gt;Hey, my name is <b>{{owner}}</b>&lt;/h1&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+    Polymer('name-tag', {
+      <b>owner: 'Rob'</b>
+    });
+  &lt;/script&gt;
+&lt;/polymer-element&gt;
+</pre>
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;name-tag&gt;&lt;/name-tag&gt;
+</pre>
+
+<div class="component-demo">
+  <output style="display: block; padding: 10px;">
+    <name-tag></name-tag>
+  </output>
+</div>
+
+---
+
+id: declarative-registration
+title: Declarative registration
+#subtitle: Declarative registration
+
+<pre class="corner prettyprint">
+&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
+&lt;link rel="import" href="<span alt="bower install polymer" data-tooltip="bower install polymer">polymer.html</span>">
+</pre>
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;polymer-element name="name-tag" <b>attributes="owner"</b>&gt;
+  &lt;template&gt;
+    &lt;h1&gt;Hey, my name is <b>{{owner}}</b>&lt;/h1&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+    Polymer('name-tag', {
+      <b>owner: 'Rob'</b>
+    });
+  &lt;/script&gt;
+&lt;/polymer-element&gt;
+</pre>
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;name-tag owner="Eric"&gt;&lt;/name-tag&gt;
+</pre>
+
+<div class="component-demo">
+  <output style="display: block; padding: 10px;">
+    <name-tag owner="Eric"></name-tag>
+  </output>
+</div>
+
+---
+
+id: content-element
+title: Working with content
+
+<pre class="corner prettyprint">
+&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
+&lt;link rel="import" href="<span alt="bower install polymer" data-tooltip="bower install polymer">polymer.html</span>">
+</pre>
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;polymer-element name="x-ribbon" noscript&gt;
+  &lt;template&gt;
+    &lt;style&gt;...&lt;/style&gt;
+    &lt;div id="ribbon"&gt;
+      &lt;span&gt;<b>&lt;content&gt;&lt;/content&gt;</b>&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+&lt;/polymer-element&gt;
+</pre>
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;x-ribbon&gt;<b>HTML5 Dev Conf!</b>&lt;/x-ribbon&gt;
+</pre>
+
+<div class="component-demo">
+  <output style="display: block; padding: 10px 0 40px; text-align: center;">
+    <x-ribbon>HTML5 Dev Conf!</x-ribbon>
+  </output>
+</div>
 
 ---
 
@@ -1608,11 +1575,11 @@ title: Declarative registration
 <pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
 &lt;polymer-element name="hello-element"&gt;
   &lt;template&gt;
-    &lt;h2&gt;I can say hello&lt;/h2&gt;
+    &lt;h2 <b>on-tap="{{sayHello}}</b>"&gt;I can say hello&lt;/h2&gt;
   &lt;/template&gt;
   &lt;script&gt;
   Polymer('hello-element', {
-    sayHello: function() { alert('Howdy folks!'); }
+    <b>sayHello: function() { alert('Howdy folks!'); }</b>
   });
   &lt;/script&gt;
 &lt;/polymer-element&gt;
@@ -2117,10 +2084,8 @@ content_class: flexbox vleft
 
 ---
 
-body_class: core-fill
-content_class: flexbox vcenter
-
-<h2 class="faded"><em>[What makes a good component]</em></h2>
+# title: foo
+body_class: first
 
 <aside class="note">
   <section>
@@ -2130,10 +2095,226 @@ content_class: flexbox vcenter
 
 ---
 
+title: A good component is...
+content_class: flexbox vleft
+
+<ul class="build no-icon" style="font-size: 60px; font-family: 'Source Code Pro';">
+  <li><strong>(F)</strong>ocused</li>
+  <li><strong>(I)</strong>ndependent</li>
+  <li><strong>(R)</strong>eusable</li>
+  <li><strong>(S)</strong>mall</li>
+  <li><strong>(T)</strong>estable</li>
+</ul>
+
+---
+
+body_class: first
+
+<aside class="note">
+  <section>
+    <p>http://addyosmani.com/first/</p>
+  </section>
+</aside>
+
+---
+
+body_class: iceberg
+body_overlay: light-black
+class: nobackground nopadding
+content_class: flexbox vcenter
+
+<h2 style="color: white; font-size: 60px;">Changing Our Process</h2>
+
+<aside class="note">
+  <section>
+    <p>Seen this a lot at agencies...</p>
+    <p><b>Next: Comps</b></p>
+  </section>
+</aside>
+
+---
+
+hidden: true
+body_class: comp1
+
+---
+
+hidden: true
+body_class: comp2
+
+---
+
+hidden: true
+body_class: comp3
+
+---
+
+hidden: true
+class: large
+content_class: flexbox vcenter
+
+<pre class="nohighlight">
+$(document).ready()
+</pre>
+
+---
+
+hidden: true
+body_class: maverick
+
+---
+
+hidden: true
+class: large
+content_class: flexbox vcenter
+
+<h1 style="font-size: 130px;"><strong>No.</strong></h1>
+
+---
+
+hidden: true
+class: large
+content_class: flexbox vcenter
+
+<h1 style="font-size: 130px;"><strong>Bad.</strong></h1>
+
+<aside class="note">
+  <section>
+    <p>I know this is how we work because I've done this process before at agencies and as a freelancer</p>
+    <p><b>Next: Thinking in Components</b></p>
+  </section>
+</aside>
+
+---
+
 body_class: elements-fill
 content_class: flexbox vcenter
 
-<h2 class="faded">Designer demo</h2>
+<h2 class="faded">Think <em>in Components</em></h2>
+
+<aside class="note">
+  <section>
+    <p>If we're going to succeed we have to be thinking in responsive components.</p>
+    <p>Approach the process like Paul Rand.</p>
+    <p>Start with basic elements, and build up.</p>
+    <p><b>Next: Style tiles</b></p>
+  </section>
+</aside>
+
+---
+
+body_class: styletiles
+
+<p class="citation inverse" style="bottom: -8%">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Samantha Warren</li>
+      <li>Style tiles are for when a moodboard is too vague and a comp is too literal.</li>
+      <li>A catalyst for discussions around the preferences and goals of the client</li>
+    </ul>
+  </section>
+</aside>
+
+---
+
+body_class: styletiles2
+
+<p class="citation">Source: Samantha Warren, <a href="http://styletil.es/">http://styletil.es/</a></p>
+
+---
+
+body_class: core-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Create Living <em>Style Guides</em></h2>
+
+---
+
+body_class: core-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">[video of pattern lab]</h2>
+
+---
+
+hidden: true
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">[video of pattern lab]</h2>
+
+---
+
+body_class: platform-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Build <em>with Polymer</em></h2>
+
+---
+
+hidden: true
+body_class: elementcollages
+
+---
+
+hidden: true
+body_class: styleguides
+
+<aside class="note">
+  <section>
+    <p>A traditional style guide, featuring actual code.</p>
+  </section>
+</aside>
+
+---
+
+hidden: true
+body_class: barebones
+
+---
+
+hidden: true
+body_class: barebones2
+
+---
+
+hidden: true
+body_class: barebones3
+
+<aside class="note">
+  <section>
+    <p>Build up over time. Make simple prototypes, find the bits that work, and add them to the style guide</p>
+    <p>Some of the benefits for using a living style guide</p>
+    <ul>
+      <li>easier to test</li>
+      <li>better workflow</li>
+      <li>shared vocabulary</li>
+      <li>useful reference</li>
+    </ul>
+  </section>
+</aside>
+
+---
+
+hidden: true
+body_class: atomicdesign
+
+---
+
+hidden: true
+body_class: atoms
+
+---
+
+hidden: true
+body_class: molecule
+
+---
+
+hidden: true
+body_class: wireframe
 
 ---
 

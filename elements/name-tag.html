@@ -1,0 +1,11 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="name-tag" attributes="owner">
+  <template>
+    <h1>Hey, my name is {{owner}}</h1>
+  </template>
+  <script>
+    Polymer('name-tag', {
+      owner: 'Rob'
+    });
+  </script>
+</polymer-element>

@@ -140,6 +140,15 @@
 }
 
 body {
+  &.overlay-green::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#9DBE99, 1);
+  }
   &.overlay-white::before {
     content: " ";
     position: absolute;
@@ -390,6 +399,14 @@ body {
   }
   &.devices {
     background: url('../../images/bgs/devices.jpg') no-repeat 50% 55%;
+    background-size: cover;
+  }
+  &.styleguides {
+    background: url('../../images/bgs/styleguides.png') no-repeat 50% 5%;
+    background-size: cover;
+  }
+  &.first {
+    background: url('../../images/bgs/first.jpg') no-repeat center;
     background-size: cover;
   }
 }
@@ -1337,4 +1354,12 @@ figcaption a {
   a {
     color: #6D7074;
   }
+}
+
+.pull-up {
+  margin-top: -450px;
+}
+
+.no-icon li::before {
+  background: none;
 }
