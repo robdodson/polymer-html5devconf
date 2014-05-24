@@ -2,7 +2,7 @@
 
 ## Live Preview
 
-[Live slides](http://robdodson.me/polymer-austinjs) | 
+[Live slides](http://robdodson.me/polymer-html5devconf) | 
 
 ## Getting Started
 
